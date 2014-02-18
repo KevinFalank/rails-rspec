@@ -1,0 +1,19 @@
+Hello I am a new page!
+<%= form_for @post, url: { action: "create" }  do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :content %><br>
+    <%= f.text_field :content %>
+  </p>
+
+  <p>
+    <%= f.label :is_published %><br>
+    <%= f.check_box :is_published %>
+  </p>
+  <p>
+    <%= f.submit "Save"%>
+  </p>
+<% end %>
