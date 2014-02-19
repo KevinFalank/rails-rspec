@@ -57,6 +57,7 @@ feature 'Admin panel' do
   context "on post show page" do
     it "can visit a post show page by clicking the title" do
       #can't be done!
+      debugger
       post = Post.create(title: "more postings", content: "More fancy things", is_published: true)
       visit admin_posts_url
       click_link "More Postings"
